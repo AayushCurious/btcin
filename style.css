@@ -18,7 +18,7 @@
   background-color: #4158D0;
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   width:auto;
-  height: 100px;
+  height: 77px;
   text-decoration: none;
   color: #fff;
   font-weight: 1000;
@@ -27,7 +27,13 @@
 
 .wallet
 {
-  position: inherit;
-  right: 200px;
+  position: relative;
+  left: 60%;
 
+}
+
+.body-main{
+  position: absolute;
+  left: 40%;
+  top: 30%
 }
