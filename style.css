@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    overflow-x: hidden;
+    color: #000;
+    /* background-color: black; */
+    font-size: large; 
+    font-family: 'Roboto', sans-serif;
+    /* background-color: rgba(11, 197, 230, 0.65); */
+  }    
+  
+
+.menubar
+{
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  width:auto;
+  height: 100px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 1000;
+  font-size: 200%;
+}
+
+.wallet
+{
+  position: inherit;
+  right: 200px;
+
+}
