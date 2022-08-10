@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "btc-in-project",
+    "staging": "btc-in-project"
+  },
+  "targets": {}
+}

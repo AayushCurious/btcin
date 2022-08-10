@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .center {
+            position: absolute;
+            top:20%;
+            margin: auto;
+            padding: 20px;
+            left: 40%;
+            height: 400px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: 250px;
+            background-image:linear-gradient(rgb(93, 93, 206),rgb(56, 56, 192),rgb(8, 8, 46))
+        }
+        
+        </style>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3b7239a296.js" crossorigin="anonymous"></script>
+    <title>BTC IN DAPP</title>
+</head>
+<body>
+    <div class="top">
+        <div class="menubar"><b><strong>dashboard</strong></b>
+                <button type="button" onclick="connectWallet()" class="wallet">Connect to Wallet</button>  
+
+          </div>
+    </div>
+
+    <div class="body-main">
+        <div> REFERAL CODE </div>
+
+        <div class="Referal"><textarea type="text" class="input" id="text"rows="1" cols="1" style="resize: none;"></textarea></div>
+        <button onclick="copy()" class="copy" id="copy"><i class="fa-solid fa-copy"></i><span class="popuptext" id="myPopup" onclick="popup()"></span></button>
+    </div>
+<!-- <div class="GET"> -->
+    <button class="GET" id="show">Get Tokens For Free</button>
+<!-- </div> -->
+
+    <div class="account-records">
+        <h1>Account Records</h1>
+        <ul>
+            <li class="taken">Given=150 BTCIN</li><br><br>
+            <li>_____________________________</li><br><br>
+            <li class="given">Taken=0 BTCIN</li>
+        </ul>
+    </div>
+
+    <div class="global-id">
+        <h1>Enter Referal Code</h1>
+        <div> Code </div>
+        <div class="globalReferal"><input type="text" ></div>
+    </div>
+
+
+    <div class="screen-size"><h1>Please maximize the screen size</h1></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="center hideform">
+    <form>
+    <button id="close" style="float: right;">X</button>
+        <b style="color: white;"></b><br>
+        Recipent:<br>
+        <input type="text" name="firstname" value="0x925eBDb158043bb126aBD16Ebc3efA911127ae4C">
+        <br>
+        <h2></h2>
+        <br><br><strong><h1>150 BTC IN deducted</h1></strong>
+    </form>
+</div>
+<script>
+</script>
+
+
+</body>
+
+<script src="index.js"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCzmsBI5BQ2dGQJ7yK_TdxFpFKLf-AOTZQ",
+      authDomain: "btc-in-project.firebaseapp.com",
+      projectId: "btc-in-project",
+      storageBucket: "btc-in-project.appspot.com",
+      messagingSenderId: "14075251432",
+      appId: "1:14075251432:web:7750187b5d85d61409975d",
+      measurementId: "G-6C02ZN9BJV"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  
+</html>
